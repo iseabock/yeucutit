@@ -1,9 +1,31 @@
+'use client'; 
+
+import React, { useEffect } from 'react';
 import Link from "next/link";
 import styles from "./page.module.css";
 
 import Image from "next/image";
 
 export default function Home() {
+
+  useEffect(() => {
+    const handleScroll = () => {
+      let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      const parallaxElements = document.querySelectorAll('.parallax');
+
+      parallaxElements.forEach((el: Element) => {
+        const speed = 0.5; // Adjust the speed to your liking
+        (el as HTMLElement).style.transform = `translateY(${scrollTop * speed}px)`;
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <main className={styles.main}>
       <header className={styles.header}>
@@ -44,6 +66,7 @@ export default function Home() {
                     <li>Fade and taper cuts</li>
                     {/* <li>Buzz cuts</li> */}
                     <li>Shear, texture cuts</li>
+                    <li>Curly, wavey hair</li>
                     <li>Men, women and children cuts</li>
                   </ul>
                 </div>
@@ -76,21 +99,13 @@ export default function Home() {
               <div className={styles.info}>
                 <p><b>50 Enterpise Drive, Suite 201</b><br />Rohnert Park, Ca 94928</p>
                 <ul>
-                  <li><div>Monday:</div> 9 - 6</li>
-                  <li><div>Tuesday:</div> 9 - 6</li>
-                  <li><div>Wednesday:</div> 9 - 6</li>
-                  <li><div>Thursday:</div> 9 - 6</li>
-                  <li><div>Friday:</div> 9 - 6</li>
-                  <li><div>Saturday:</div> 9 - 2</li>
+                  <li><div>Monday:</div> 10 - 6</li>
+                  <li><div>Tuesday:</div> 10 - 6</li>
+                  <li><div>Wednesday:</div> 10 - 6</li>
+                  <li><div>Thursday:</div> 10 - 6</li>
+                  <li><div>Friday:</div> 10 - 6</li>
+                  <li><div>Saturday:</div> 8:30 - 2</li>
                   <li><div>Sunday:</div> <div>Closed</div></li>
-                </ul>
-                <ul>
-                  <li><div>Haircut Only</div> $45.00 ・ 30 min</li>
-                  <li><div>Haircut & Beard Trim</div> $65.00 ・ 45 min</li>
-                  <li><div>Haircut, Beard Trim & Shampoo</div> $70.00 ・ 45 min</li>
-                  <li><div>Beard Trim Only</div> $30.00 ・ 30 min</li>
-                  <li><div>Haircut & Shampoo</div> $50.00 ・ 30 min</li>
-                  <li><div>Buzz Cut<br />One number all over buzz cut</div> $25.00 ・ 30 min</li>
                 </ul>
               </div>
               <div className={styles.mapContainer}>

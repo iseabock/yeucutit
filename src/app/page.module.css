@@ -216,10 +216,10 @@
   }
 
   .header img {
-    width: 50%;
+    width: 75%;
     height: 50%;
     vertical-align: middle;
-    margin-top: 45px;
+    margin-top: -5px;
   }
 
   .container {
