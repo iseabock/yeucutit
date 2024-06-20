@@ -42,12 +42,12 @@
 }
 
 .parallax {
-  background-image: url("/images/YeuBG.webp");
+  /* background-image: url("/images/YeuBG.webp"); */
   height: 200px;
-  background-attachment: fixed;
+  /* background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
 }
 
 .content {
