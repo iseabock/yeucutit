@@ -99,12 +99,12 @@ export default function Home() {
               <div className={styles.info}>
                 <p><b>50 Enterpise Drive, Suite 201</b><br />Rohnert Park, Ca 94928</p>
                 <ul>
-                  <li><div>Monday:</div> 10 - 6</li>
-                  <li><div>Tuesday:</div> 10 - 6</li>
-                  <li><div>Wednesday:</div> 10 - 6</li>
-                  <li><div>Thursday:</div> 10 - 6</li>
-                  <li><div>Friday:</div> 10 - 6</li>
-                  <li><div>Saturday:</div> 8:30 - 2</li>
+                  <li><div>Monday:</div> 10 <sup>am</sup> - 6 <sup>pm</sup></li>
+                  <li><div>Tuesday:</div> 10 <sup>am</sup> - 6 <sup>pm</sup></li>
+                  <li><div>Wednesday:</div> 10 <sup>am</sup> - 6 <sup>pm</sup></li>
+                  <li><div>Thursday:</div> 10 <sup>am</sup> - 6 <sup>pm</sup></li>
+                  <li><div>Friday:</div> 10 <sup>am</sup> - 6 <sup>pm</sup></li>
+                  <li><div>Saturday:</div> 8:30 <sup>am</sup> - 2 <sup>pm</sup></li>
                   <li><div>Sunday:</div> <div>Closed</div></li>
                 </ul>
               </div>
