@@ -19,6 +19,7 @@ export default function RootLayout({
   return (
     <html lang='en' className={fonts.cormorant.variable}>
       <body>
+        <div className="bg"></div>
         {children}
       </body>
     </html>
