@@ -66,7 +66,7 @@ export default function Home() {
                     <li>Fade and taper cuts</li>
                     {/* <li>Buzz cuts</li> */}
                     <li>Shear, texture cuts</li>
-                    <li>Curly, wavey hair</li>
+                    <li>Curly, wavy hair</li>
                     <li>Men, women and children cuts</li>
                   </ul>
                 </div>
