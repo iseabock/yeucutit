@@ -1,4 +1,4 @@
-'use client'; 
+'use client';
 
 import React, { useEffect } from 'react';
 import Link from "next/link";
@@ -7,6 +7,9 @@ import styles from "./page.module.css";
 import Image from "next/image";
 
 export default function Home() {
+
+  const year = new Date().getFullYear();
+  const yearSpan = year === 2024 ? "2024" : `2024 - ${year}`;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,7 +23,7 @@ export default function Home() {
     };
 
     window.addEventListener('scroll', handleScroll);
-    
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
@@ -29,7 +32,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <header className={styles.header}>
-        <Image src="/images/YeucutitLogo.webp" alt="Yeu" width={400} height={400} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+        <Image src="/images/YeucutitLogo.webp" alt="Yeucutit Logo - with hair cutting shears" layout="responsive" width={300} height={300} />
       </header>
       <div className={styles.container}>
         <div className={styles.parallax} />
@@ -37,10 +40,13 @@ export default function Home() {
           <div className={`${styles.contentContainer}`}>
             <h1>Welcome </h1>
             <div className={`${styles.intro}`}>
-              <p className={styles.topLeft}>Highly skilled and experienced hair stylist with over 20 years in the barbershop and hair salon industry.  Specializing in men&apos;s and women&apos;s haircuts, she has dedicated her career to creating stylish and contemporary looks. Known for her attention to detail and ability to craft tailored styles that suit each client&apos;s personality and lifestyle, Yeu has built a loyal clientele who appreciate her expertise and creative flair. Whether it&apos;s a classic cut, a modern style, or a complete transformation, Yeu&apos;s clients always leave her chair looking and feeling their best. </p>
-              {/* <p className={styles.topLeft}>Yeu is a highly skilled and experienced hair stylist with over 20 years in the industry. Specializing in men&apos;s haircuts, she has dedicated her career to creating stylish and contemporary looks. Known for her meticulous attention to detail and ability to craft tailored styles that suit each client&apos;s personality and lifestyle, Yeu has built a loyal clientele who appreciate her expertise and creative flair. Her commitment to excellence and customer satisfaction has made her a sought-after stylist in the community.</p>
-              <p className={styles.topright}>Yeu stays ahead of the latest trends and techniques through continuous education and training. Whether it&apos;s a classic cut, a modern style, or a complete transformation, Yeu&apos;s clients always leave her chair looking and feeling their best. Her warm personality and professional approach make every visit a comfortable and enjoyable experience. Outside the salon, Yeu enjoys exploring new trends in fashion and grooming, ensuring she brings fresh ideas and inspiration to her work.</p>*/}
-              <p className={styles.bottom}>The vibe in Yeu&apos;s shop is welcoming and lively, with good music playing to keep the atmosphere upbeat. Sports fans will appreciate the games playing on the TV, and when no sports are on, popular movies are shown to keep clients entertained. This creates a relaxed and enjoyable environment where everyone feels at ease while getting their perfect haircut.</p>
+              <div>
+                <p>Highly skilled and experienced hair stylist with over 20 years in the barbershop and hair salon industry.  Specializing in men&apos;s and women&apos;s haircuts, she has dedicated her career to creating stylish and contemporary looks. Known for her attention to detail and ability to craft tailored styles that suit each client&apos;s personality and lifestyle, Yeu has built a loyal clientele who appreciate her expertise and creative flair. Whether it&apos;s a classic cut, a modern style, or a complete transformation, Yeu&apos;s clients always leave her chair looking and feeling their best. </p>
+                <p>The vibe in Yeu&apos;s shop is welcoming and lively, with good music playing to keep the atmosphere upbeat. Sports fans will appreciate the games playing on the TV, and when no sports are on, popular movies are shown to keep clients entertained. This creates a relaxed and enjoyable environment where everyone feels at ease while getting their perfect haircut.</p>
+              </div>
+              <div>
+                <Image src="/images/chair.webp" alt="barber chair, barber pole and classic celebrities getting haircuts " layout="responsive" width={500} height={500} />
+              </div>
             </div>
             <div className={styles.bookAppointment}>
               <Link target="_blank" href={'https://book.squareup.com/appointments/jk9jhgdneixhj4/location/LA3NQCAENZFYS/services'}>Book Now</Link>
@@ -57,14 +63,9 @@ export default function Home() {
                   <ul>
                     <li className={styles.serviceTitle}>Haircuts</li>
                     <li>Skin/bald fades</li>
-                    {/* <li>High fade</li>
-                    <li>Mid fade</li>
-                    <li>Low fade</li> */}
-                    {/* <li>Comb over</li> */}
                     <li>Traditional haircuts</li>
                     <li>Modern and trendy styles</li>
                     <li>Fade and taper cuts</li>
-                    {/* <li>Buzz cuts</li> */}
                     <li>Shear, texture cuts</li>
                     <li>Curly, wavy hair</li>
                     <li>Men, women and children cuts</li>
@@ -79,9 +80,6 @@ export default function Home() {
                   <ul>
                     <li className={styles.serviceTitle}>Extras</li>
                     <li>Hair styling for special occasions (e.g., weddings, events)</li>
-                    {/* <li>Hair styling for special occasions (e.g., weddings, events)</li>
-                    <li>Blow drying and styling</li>
-                    <li>Application of hair products (gels, pomades, waxes)</li> */}
                   </ul>
                 </div>
               </div>
@@ -118,7 +116,7 @@ export default function Home() {
           </div>
         </div>
         <footer className={styles.footer}>
-          <p>&copy; Yeucutit {new Date().getFullYear()}</p>
+          <p>&copy; Yeucutit {yearSpan}</p>
         </footer>
       </div>
     </main>

@@ -4,10 +4,10 @@
   justify-content: space-between;
   align-items: center;
   min-height: 100vh;
+  max-width: 100%;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  position: absolute;
 }
 
 .container {
@@ -29,10 +29,19 @@
   backdrop-filter: blur(10px);
   width: 100%;
   min-height: 300px;
+  min-width: 100vw;
   margin-top: 15%;
   border-top: #aaaaaa 1px solid;
   border-bottom: #aaaaaa 1px solid;
 }
+
+.header img {
+  width: 400px !important;
+  height: 400px !important;
+  vertical-align: middle;
+  margin-top: -5px;
+}
+
 
 .headerTitle {
   font-size: 6em;
@@ -79,7 +88,7 @@
 }
   
 .content .contentContainer {
-  width: 70%;
+  width: 50%;
   margin: 0 auto;
 }
 
@@ -121,22 +130,20 @@
   gap: 10px;
 }
 
-.intro p {
+.intro div {
   flex: 1;
   text-align: justify;
+}
+
+.content .contentContainer img {
+  border-radius: 3px;
+  border: #333333 2px solid;
 }
 
 .content .contentContainer .services {
   padding-left: 1em;
   width: 100%;
   margin-left: auto;
-}
-
-.content .contentContainer .services .servicesContainer {
-  /* display: flex; */
-  /* flex-wrap: wrap;
-  justify-content: center;
-  flex-direction: row; */
 }
 
 .content .contentContainer .services .servicesContainer div {
@@ -224,8 +231,17 @@
     margin-top: -5px;
   }
 
+  .content p {
+    color: black;
+    padding: 1em 0;
+  }
+
   .container {
     width: 100%;
+  }
+
+  .content .contentContainer .services {
+    padding-left: 0;
   }
 
   .content .contentContainer  {
@@ -234,7 +250,6 @@
   }
 
   .content .contentContainer div {
-    width: 90%;
     margin: 0 auto;
   }
 
@@ -242,6 +257,11 @@
     width: 100%;
     margin: 0;
   }
+
+  .content .contentContainer .services .servicesContainer div ul {
+    padding: 1em 0;
+  }
+  
 
   .services .servicesContainer div  ul {
     width: 100%;
