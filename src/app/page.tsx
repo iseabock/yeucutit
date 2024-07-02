@@ -32,7 +32,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <header className={styles.header}>
-        <Image src="/images/YeucutitLogo.webp" alt="Yeucutit Logo - with hair cutting shears" layout="responsive" width={300} height={300} />
+        <Image src="/images/YeucutitLogo.webp" alt="Yeucutit Logo - with hair cutting shears" layout="responsive" width={200} height={200} />
       </header>
       <div className={styles.container}>
         <div className={styles.parallax} />

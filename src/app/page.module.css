@@ -220,6 +220,10 @@
 }
 
 @media (max-width: 767px) {
+  .main {
+    position: absolute;
+  }
+  
   .header {
     margin-top: 45%;
   }
