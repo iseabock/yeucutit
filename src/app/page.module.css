@@ -223,17 +223,14 @@
   .main {
     position: absolute;
   }
-  
+
   .header {
     margin-top: 45%;
   }
 
   .header img {
-    width: 75%;
-    height: 50%;
-    vertical-align: middle;
-    margin-top: -5px;
-  }
+  width: 100% !important;
+}
 
   .content p {
     color: black;
