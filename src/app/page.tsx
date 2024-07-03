@@ -24,10 +24,11 @@ export default function Home() {
             <div className={`${styles.contentBody} ${styles.intro}`}>
               <div>
                 <p>Highly skilled and experienced hair stylist with over 20 years in the barbershop and hair salon industry.  Specializing in men&apos;s and women&apos;s haircuts, she has dedicated her career to creating stylish and contemporary looks. Known for her attention to detail and ability to craft tailored styles that suit each client&apos;s personality and lifestyle, Yeu has built a loyal clientele who appreciate her expertise and creative flair. Whether it&apos;s a classic cut, a modern style, or a complete transformation, Yeu&apos;s clients always leave her chair looking and feeling their best. </p>
+                <Image className={styles.shearImageSeparator} src="/images/scissors.png" alt="Barber Shears" width={32} height={32} />
                 <p>The vibe in Yeu&apos;s shop is welcoming and lively, with good music playing to keep the atmosphere upbeat. Sports fans will appreciate the games playing on the TV, and when no sports are on, popular movies are shown to keep clients entertained. This creates a relaxed and enjoyable environment where everyone feels at ease while getting their perfect haircut. Finally, time is a valuable resource and Yeu prides herself on being prompt and keeping a dependable schedule for her clients.</p>
               </div>
               <div>
-                <Image src="/images/chair.webp" alt="barber chair, barber pole and classic celebrities getting haircuts " layout="responsive" width={500} height={500} />
+                <Image className={styles.siteImage} src="/images/chair.webp" alt="barber chair, barber pole and classic celebrities getting haircuts " layout="responsive" width={500} height={500} />
               </div>
             </div>
             <div className={styles.bookAppointment}>

@@ -141,9 +141,13 @@
   text-align: justify;
 }
 
-.content .contentContainer img {
+.siteImage {
   border-radius: 3px;
   border: #333333 2px solid;
+}
+
+.shearImageSeparator {
+  margin: 0 50% 1em calc(50% - 16px);
 }
 
 .content .contentContainer .services {
