@@ -84,12 +84,18 @@
 
 .content p {
   color: black;
-  padding: 1em;
+  padding: 0 0 1em 0;
 }
   
 .content .contentContainer {
   width: 50%;
   margin: 0 auto;
+}
+
+.content .contentContainer .contentBody {
+  padding: 1em 0;
+  display: flex;
+  gap: 1em;
 }
 
 .content .contentContainer .bookAppointment {
@@ -144,6 +150,11 @@
   padding-left: 1em;
   width: 100%;
   margin-left: auto;
+}
+
+.content .contentContainer .services .servicesContainer {
+  display: flex;
+  flex-direction: row;
 }
 
 .content .contentContainer .services .servicesContainer div {
@@ -208,10 +219,6 @@
   border: 0;
   padding: 10px;
 }
-
-/* .content .contentContainer.location .mapContainer {
-  min-height: 300px;
-} */
 
 @media (min-width: 768px) {
   .container {
