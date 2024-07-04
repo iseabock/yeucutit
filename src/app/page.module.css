@@ -253,6 +253,10 @@
     width: 100%;
   }
 
+  .shearImageSeparator {
+    margin-bottom: 0;
+  }
+
   .content .contentContainer .services {
     padding-left: 0;
   }
