@@ -91,6 +91,11 @@ export default function Home() {
               </div>
               <div className={styles.mapContainer}>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3129.1784187797116!2d-122.7087401!3d38.3448523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80844a72e9bb935f%3A0x2da89d08a833b9c7!2s50%20Enterprise%20Dr%2C%20Rohnert%20Park%2C%20CA%2094928!5e0!3m2!1sen!2sus!4v1718669326861!5m2!1sen!2sus" width="600" height="450" loading="lazy"></iframe>
+                <div>
+                  <Link target="_blank" href={'https://www.mysalonsuite.com/members/yeu-y/'}>Yeu Cut It located in the Rohnert Park My Salon Suite</Link>
+                  <br />
+                  <Link target="_blank" href={'https://www.mysalonsuite.com/'}>My Salon Suite</Link>
+                </div>
               </div>
             </div>
             <div className={styles.bookAppointment}>
