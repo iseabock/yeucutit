@@ -217,7 +217,7 @@
 
 .content .contentContainer.location .locationContainer .mapContainer iframe {
   height: 289px;
-  width: 305px;
+  width: 100%;
   border: 0;
 }
 
